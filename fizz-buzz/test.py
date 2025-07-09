@@ -23,5 +23,11 @@ def test_convert_nine():
 def test_convert_ten():
     assert convert(10) == "Buzz"
 
-def test_convert_fifteen():
-    assert convert(15) == "FizzBuzz"
+def test_convert_large_integer_three():
+    assert convert(3*3*3*3) == "Fizz"
+
+def test_convert_large_integer_five():
+    assert convert(5*5*5*5) == "Buzz"
+
+def test_convert_large_integer_three_and_five():
+    assert convert(3*5*3*5) == "FizzBuzz"
