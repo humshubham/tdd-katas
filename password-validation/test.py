@@ -16,3 +16,6 @@ def test_does_not_contain_number():
 
 def test_does_not_contain_underscore():
     assert is_password_valid("noUnderScore1") == False
+
+def test_valid_password():
+    assert is_password_valid("noUnderScore1_") == True
