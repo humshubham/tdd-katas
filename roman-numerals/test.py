@@ -17,6 +17,9 @@ def test_convert_four():
 def test_convert_five():
     assert convert(5) == "V"
 
+def test_convert_nine():
+    assert convert(9) == "IX"
+
 def test_convert_ten():
     assert convert(10) == "X"
 
