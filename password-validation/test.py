@@ -1,21 +1,21 @@
 import pytest
 
-from app import is_password_valid
+from app import PasswordValidator
 
 def test_len_less_than_equal_to_eight():
-    assert is_password_valid("12345678") == False
+    assert PasswordValidator("12345678").is_password_valid() == False
 
 def test_does_not_contain_capital_letter():
-    assert is_password_valid("lowercase") == False
+    assert PasswordValidator("lowercase").is_password_valid() == False
 
 def test_does_not_contain_lowercase_letter():
-    assert is_password_valid("UPPERCASE") == False
+    assert PasswordValidator("UPPERCASE").is_password_valid() == False
 
 def test_does_not_contain_number():
-    assert is_password_valid("noNumbers") == False
+    assert PasswordValidator("noNumbers").is_password_valid() == False
 
 def test_does_not_contain_underscore():
-    assert is_password_valid("noUnderScore1") == False
+    assert PasswordValidator("noUnderScore1").is_password_valid() == False
 
 def test_valid_password():
-    assert is_password_valid("noUnderScore1_") == True
+    assert PasswordValidator("noUnderScore1_").is_password_valid() == True
