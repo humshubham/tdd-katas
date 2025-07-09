@@ -15,4 +15,4 @@ class Stack:
         return len(self.stack)
     
     def peek(self):
-        raise NotImplementedError
+        return self.stack[0]
