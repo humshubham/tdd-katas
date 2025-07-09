@@ -13,3 +13,6 @@ def test_convert_three():
 
 def test_convert_four():
     assert convert(4) == "4"
+
+def test_convert_five():
+    assert convert(5) == "Buzz"
