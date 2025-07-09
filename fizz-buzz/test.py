@@ -16,3 +16,12 @@ def test_convert_four():
 
 def test_convert_five():
     assert convert(5) == "Buzz"
+
+def test_convert_nine():
+    assert convert(9) == "Fizz"
+
+def test_convert_ten():
+    assert convert(10) == "Buzz"
+
+def test_convert_fifteen():
+    assert convert(15) == "FizzBuzz"
