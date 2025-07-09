@@ -3,10 +3,14 @@ def is_password_valid(password:str)->bool:
  
     has_capital_letter = False  
     has_lowercase_letter = False 
+    has_a_number = False
+
     for char in password:
         if char.isupper():
             has_capital_letter = True
-        else:
+        elif char.islower():
             has_lowercase_letter = True
+        elif char.isdigit():
+            has_a_number = True
     
-    return is_valid_len and has_capital_letter and has_lowercase_letter
+    return is_valid_len and has_capital_letter and has_lowercase_letter and has_a_number

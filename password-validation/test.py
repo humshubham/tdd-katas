@@ -10,3 +10,6 @@ def test_does_not_contain_capital_letter():
 
 def test_does_not_contain_lowercase_letter():
     assert is_password_valid("UPPERCASE") == False
+
+def test_does_not_contain_number():
+    assert is_password_valid("noNumbers") == False
