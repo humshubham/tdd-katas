@@ -8,12 +8,12 @@ def convert(number:int)->str:
     
     position = 0
     while number >= 0 and position < len(unique_nums):
-
-        if number - unique_nums[position] >= 0:
+        current_number = unique_nums[position]
+        if number - current_number >= 0:
             
-            number-=unique_nums[position]
-            roman_str+=unique_nums_dict[unique_nums[position]]
-
-        position +=1
+            number-=current_number
+            roman_str+=unique_nums_dict[current_number]
+        if number < current_number:
+            position +=1
 
     return roman_str

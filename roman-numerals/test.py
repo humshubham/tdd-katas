@@ -23,6 +23,12 @@ def test_convert_nine():
 def test_convert_ten():
     assert convert(10) == "X"
 
+def test_convert_eleven():
+    assert convert(11) == "XI"
+
+def test_convert_twenty():
+    assert convert(20) == "XX"
+
 def test_convert_fifty():
     assert convert(50) == "L"
 
