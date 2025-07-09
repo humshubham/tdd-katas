@@ -28,3 +28,6 @@ def test_factors_of_eight():
 
 def test_factors_of_nine():
     assert(prime_factors(9)) == [3,3]
+
+def test_factors_of_large_integer():
+    assert(prime_factors(2*2*3*3*5*7)) == [2,2,3,3,5,7]
