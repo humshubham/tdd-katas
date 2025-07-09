@@ -13,3 +13,6 @@ def test_does_not_contain_lowercase_letter():
 
 def test_does_not_contain_number():
     assert is_password_valid("noNumbers") == False
+
+def test_does_not_contain_underscore():
+    assert is_password_valid("noUnderScore1") == False
