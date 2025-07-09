@@ -25,3 +25,6 @@ def test_factors_of_seven():
 
 def test_factors_of_eight():
     assert(prime_factors(8)) == [2,2,2]
+
+def test_factors_of_nine():
+    assert(prime_factors(9)) == [3,3]
