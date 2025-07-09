@@ -13,4 +13,9 @@ def test_empty_stack_size(stack):
 def test_push(stack):
     stack.push(1)
     assert stack.size() == 1
+
+def test_pop(stack):
+    stack.push(2)
+    assert stack.pop() == 2
+    assert stack.size() == 0
     

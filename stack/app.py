@@ -6,7 +6,7 @@ class Stack:
         self.stack.insert(0, element)
     
     def pop(self):
-        raise NotImplementedError
+        return self.stack.pop()
     
     def is_empty(self):
         raise NotImplementedError
