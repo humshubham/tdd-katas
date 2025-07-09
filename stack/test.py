@@ -9,6 +9,7 @@ def stack():
 
 def test_empty_stack_size(stack):
     assert stack.size() == 0
+    assert stack.is_empty() == True
 
 def test_push(stack):
     stack.push(1)

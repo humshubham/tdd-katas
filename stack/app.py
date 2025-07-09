@@ -9,7 +9,7 @@ class Stack:
         return self.stack.pop()
     
     def is_empty(self):
-        raise NotImplementedError
+        return self.size() == 0
     
     def size(self) -> int:
         return len(self.stack)
