@@ -22,3 +22,6 @@ def test_factors_of_six():
 
 def test_factors_of_seven():
     assert(prime_factors(7)) == [7]
+
+def test_factors_of_eight():
+    assert(prime_factors(8)) == [2,2,2]
