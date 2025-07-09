@@ -7,3 +7,6 @@ def test_factors_of_one():
 
 def test_factors_of_two():
     assert(prime_factors(2)) == [2]
+
+def test_factors_of_three():
+    assert(prime_factors(3)) == [3]
