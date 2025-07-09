@@ -32,11 +32,26 @@ def test_convert_twenty():
 def test_convert_fifty():
     assert convert(50) == "L"
 
+def test_convert_eighty():
+    assert convert(80) == "LXXX"
+
+def test_convert_ninety():
+    assert convert(90) == "CM"
+
 def test_convert_hundred():
     assert convert(100) == "C"
 
+def test_convert_four_hundred():
+    assert convert(400) == "CD"
+
 def test_convert_five_hundred():
     assert convert(500) == "D"
+
+def test_convert_eight_hundred():
+    assert convert(800) == "DCCC"
+
+def test_convert_nine_hundred():
+    assert convert(900) == "CM"
 
 def test_convert_thousand():
     assert convert(1000) == "M"
