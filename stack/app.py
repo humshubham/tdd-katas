@@ -2,8 +2,8 @@ class Stack:
     def __init__(self):
         self.stack=[]
 
-    def push(self):
-        raise NotImplementedError
+    def push(self, element):
+        self.stack.insert(0, element)
     
     def pop(self):
         raise NotImplementedError
