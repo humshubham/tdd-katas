@@ -13,4 +13,7 @@ def test_more_than_twelve():
     assert "Day should be from 1 to 12" in str(e)
 
 def test_day_one():
-    assert   print_christmas_song(1) == "On the First day of Christmas,\nMy true love gave to me:\nA partridge in a pear tree"
+    assert print_christmas_song(1).lower() == "On the First day of Christmas,\nMy true love gave to me:\nA partridge in a pear tree.".lower()
+
+def test_day_two():
+    assert print_christmas_song(2).lower() == "On the Second day of Christmas,\nMy true love gave to me:\nTwo turtle doves,\nAnd a partridge in a pear tree.".lower()
